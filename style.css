@@ -16,18 +16,29 @@ header h1 {
     display: flex;
 }
 
-.navbar {
-    width: 200px;
-    min-width: 200px;
+.navbar-sm {
+    display: none;
+    visibility: hidden;
+}
+
+.navbar,
+.navbar-sm {
     background-color: lightsteelblue;
 }
 
-.navbar ul {
+.navbar {
+    width: 200px;
+    min-width: 200px;
+}
+
+.navbar ul,
+.navbar-sm ul {
     list-style: none;
     padding-left: 0;
 }
 
-.navbar li {
+.navbar li,
+.navbar-sm li {
     text-align: center;
     border: 1px solid black;
     margin: 5px;
@@ -39,14 +50,17 @@ header h1 {
     background-color: rgb(36, 89, 196);
 }
 
-.navbar a {
+.navbar a,
+.navbar-sm a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.navbar a {
     font-size: 1.5em;
     line-height: 2.0em;
 }
-
 
 .content {
     margin: 5px;
@@ -56,10 +70,14 @@ header h1 {
     max-width: 300px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     body {
-        background-color: black;
+        background-color: red;
         color: white;    
+    }
+    
+    .container {
+        display: block;
     }
 
     .maxSize {
@@ -67,8 +85,60 @@ header h1 {
     }
 
     .navbar {
-        /* visibility: hidden;
-        display: none; */
+        visibility: hidden;
+        display: none;
+    }
+
+    .navbar-sm {
+        display: block;
+        visibility: visible;
+    }
+
+    .navbar-sm ul {
+        margin: 0;
+    }
+
+    .navbar-sm li {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .content {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+        color: white;    
+    }
+    
+    .container {
+        display: block;
+    }
+
+    .maxSize {
+        max-width: 100px;
+    }
+
+    .navbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    .navbar-sm {
+        display: block;
+        visibility: visible;
+    }
+
+    .navbar-sm ul {
+        margin: 0;
+    }
+
+    .navbar-sm li {
+        display: inline-block;
+        padding: 10px 20px;
     }
 
     .content {
