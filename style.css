@@ -70,6 +70,18 @@ header h1 {
     max-width: 300px;
 }
 
+.peopleTable {
+    border: 1px solid white;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.peopleTable td,
+.peopleTable th {
+    margin: 0;
+    border: 1px solid white;
+}
+
 @media screen and (max-width: 900px) {
     body {
         background-color: red;
