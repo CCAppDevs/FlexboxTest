@@ -3,7 +3,12 @@ body {
 }
 
 header {
-    background-color: Blue;
+    background-color: blue;
+    color: white;
+}
+
+.branding {
+    background-color: green;
     color: white;
 }
 
@@ -60,6 +65,32 @@ header h1 {
 .navbar a {
     font-size: 1.5em;
     line-height: 2.0em;
+}
+
+/* navbar dropdown code */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown span {
+    font-size: 1.5em;
+    line-height: 2.0em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .content {

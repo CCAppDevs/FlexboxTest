@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="branding">
         <h1>Smash Games</h1>
     </header>
     <div class="container">
@@ -13,7 +13,16 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="games.html">Our Games</a></li>
+                <li class="dropdown">
+                    <span>Our Games</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Game 1</li>
+                            <li>Game 2</li>
+                            <li>Game 3</li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
